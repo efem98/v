@@ -1,0 +1,151 @@
+.fifth{
+	margin: 100px auto;
+	text-align: center;
+	background: darkgray;
+	padding: 40px;
+}
+
+
+.fifth-img img{
+	width: 10%;
+	height: 100px;
+	margin: 13px;
+}
+.sixth{
+	margin: 100px auto;
+	text-align: center;
+
+}
+.sixth-img{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: left;
+}
+.sixth-img img{
+	margin-left: 13px;
+	margin-top: 20px;
+ 	width: 300px;	
+}
+.six{
+	background: rgba(0, 0, 0, 0.4);
+	position: relative;
+	bottom: 50px;
+	width: 300px;
+	padding: 3px;
+	margin-left: 13px;
+}
+
+.seventh{
+/*	width: 100%;*/
+	height: 60vh;
+	background: url("../images/seven.jpg");
+	background-position: left;
+	background-size: cover;
+	padding-top: 100px ;
+	padding-left:200px ; 
+	text-align: left;
+}
+.seven-img img{
+	width: 100px;
+}
+.seventh-body{
+	display: flex;
+	
+}
+.seven-text {
+	max-width: 400px;
+	margin-left: 20px;
+}
+.seven-text .me{
+	color: green;
+}
+.dot{
+	border: 2px dotted green;
+	width: 30px;
+	border-radius: 50%;
+}
+.eight{
+	margin: 100px 100px;
+}
+.eight-head{
+display: flex;
+	justify-content: space-between;
+}
+.eight-headpara{
+	text-align: left;
+}
+.eight-image h1{
+	background: green;
+	font-size: 25px;
+	color: #000;
+	width: 100px;
+}
+
+.eight-image{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+}
+
+.eight-first-img img{
+	width: 300px;
+	height: 200px;
+}
+.eight-first-img p{
+	max-width: 300px;
+	text-align: left;
+}
+.eight-sec-img img{
+	width: 250px;
+	height: 100px;
+}
+.eight-cont{
+	display: flex;
+	background: darkgray;
+}
+.eight-cont p{
+	max-width: 300px;
+	text-align: left;
+	margin-left: 20px;
+}
+.eight-cont h1{
+	margin-left: 20px;
+}
+.eat{
+	background:#000;
+}
+
+footer{
+
+	display: flex;
+	padding-top: 100px;
+	justify-content: space-around;
+	text-align: left;
+	margin-bottom: 0px;
+	overflow: hidden;
+}
+.fit-para{
+	padding-top: 43px;
+	margin-left: -50px;
+}
+.fit-button{
+	display: flex;
+	flex-direction: column;
+}
+.fit-button button{
+	width: 200px;
+	margin-top: 10px;
+	padding: 10px;
+	border: none;
+	cursor: pointer;
+
+}
+.bod{
+	text-align: left;
+	background: darkgray;
+}
+.fit-border{
+	padding-left: 20px;
+	border-left: 2px solid green;
+}

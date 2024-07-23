@@ -1,0 +1,93 @@
+.scroll-watcher{
+	background-color: limegreen;
+	height:10px;
+	top: 0;
+	width: 100%;
+	position: fixed;
+	scale: 0 1;
+	z-index: 1000;
+	transform-origin: left;
+	animation: scroll-watcher linear;
+	animation-timeline: scroll();
+}
+@keyframes scroll-watcher{
+	to{ scale:1 1; }
+}
+
+@media (prefers-reduced-motion:no-preference){
+.image img{
+	scale: .8; opacity: 0;
+	animation: fade-in linear forwards;
+	animation-timeline: view();
+	animation-range:entry;
+}
+
+@keyframes fade-in{
+	
+	to{scale: 1; opacity: 1;}
+}
+
+
+}
+
+
+.wrapper{
+	animation: fade-out linear;
+
+	animation-timeline: view();
+	animation-range:exit -100px;
+	
+}
+
+@supports (animation-timeline: view()){
+	.one {
+animation:header-image-animation linear forwards;
+animation-timeline: view();
+animation-range:exit;
+}
+}
+
+@keyframes fade-out{
+	to{opacity: 0;}
+}
+@keyframes header-image-animation{
+	25%{ opacity:1; }
+	85%,100%{ opacity:0; scale: 3}
+}
+
+/*.scroller[data-animated="true"]{
+	overflow: hidden;
+	
+	-webskit-mask:linear-gradient(
+		90deg,
+		transparent,
+		white 20%,
+		white 80%,
+		transparent
+	);
+
+	mask: linear-gradient(90deg,transparent,#fff);
+}
+
+.scroller[data-animated="true"] p{
+	width: max-content;
+	flex-wrap: nowrap;
+/*	animation: scrolling linear 60s;*/
+	/*animation: bg-shift linear;
+	animation-timeline: scroll(root);*/
+/*}
+
+.scroller[data-direction="right"] p{
+	animation-direction: reverse;
+}
+
+@keyframes bg-shift{
+	from{background-color: red;}
+	to{background-color: blue;}
+}
+
+@keyframes scrolling{
+	to{
+		transform: translate(calc(-50% - 0.5rem));
+	}
+}*/
